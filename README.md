@@ -25,7 +25,8 @@
 - **Git** (optional, for cloning the repository)  
 
 ### 2️⃣ Clone the Repository  
-git clone https://github.com/RayDev07/SelfBot.git cd selfbot-rpc
+git clone https://github.com/RayDev07/SelfBot.git 
+cd SelfBot
 If you don't have Git, you can manually **download** the ZIP from GitHub and extract it.
 
 ### 3️⃣ Install Dependencies  
@@ -33,9 +34,8 @@ If you don't have Git, you can manually **download** the ZIP from GitHub and ext
 npm install
 
 ### 4️⃣ Configure the Selfbot  
-1. **Rename** `.env.example` to `.env`.  
-2. Open `.env` and enter your **Discord token** and other required details.  
-DISCORD_TOKEN=your_discord_token_here
+1. Open "config.js" 
+2. Enter your **Discord token** and other required details.  
 ⚠ **Do NOT share your token!**  
 
 ### 5️⃣ Start the Selfbot  
