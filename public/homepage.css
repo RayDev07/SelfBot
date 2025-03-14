@@ -1,0 +1,110 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2C2F33;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background: #23272A;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Terminal UI */
+.terminal {
+    width: 60%;
+    margin: 20px auto;
+    background: #1E1F22;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fakeMenu {
+    display: flex;
+    padding: 5px;
+    background: #23272A;
+    border-radius: 5px 5px 0 0;
+}
+
+.fakeButtons {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.fakeClose { background: #FF5F57; }
+.fakeMinimize { background: #FFBD2E; }
+.fakeZoom { background: #28C840; }
+
+.fakeScreen {
+    padding: 10px;
+    font-family: monospace;
+    color: #00FF00;
+    min-height: 200px;
+    background: #2c2f33;
+    overflow-y: auto;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #23272A;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* About Section */
+#about {
+    background: #1E1F22;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Hidden class to toggle visibility */
+.hidden {
+    display: none;
+}
+
+/* Back button */
+#back-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: #FF5F57;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#back-button:hover {
+    background: #E74C3C;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKV3</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="assets/app.css" defer rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-950 antialiased">
+    <div class="overflow-clip">
+        <header class="absolute inset-x-0 top-0 z-10">
+            <div class="relative flex justify-center">
+                <div class="mx-4 w-full max-w-7xl">
+                    <nav class="flex min-h-[80px] items-center justify-between px-4 py-3">
+                        <div class="flex items-center space-x-2">
+                            <h1
+                                class="text-transparent bg-gradient-to-br from-white to-zinc-500 bg-clip-text w-max text-2xl font-bold">
+                                ROCKV3</h1>
+                        </div>
+                        <div
+                            class="flex flex-1 items-center justify-end space-x-4 text-sm font-medium text-zinc-300 sm:space-x-6">
+                            <a href="about.html" class="hover:text-gray-200 duration-300">About</a>
+                            <a href="rpc.html">
+                                <button
+                                    class="group relative overflow-hidden rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100">
+                                    <div
+                                        class="dot animate-flow p-4 blur-md group-hover:blur-sm group-hover:p-5 -mt-2 -ml-2 rounded-full bg-cyan-400/90 absolute">
+                                    </div>
+                                    <div
+                                        class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
+                                        RPC
+                                    </div>
+                                </button>
+                            </a>
+
+                            <a href="https://github.com/RayDev07/SelfBot">
+                                <button
+                                    class="group relative overflow-hidden rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100">
+                                    <div
+                                        class="dot animate-flow p-4 blur-md group-hover:blur-sm group-hover:p-5 -mt-2 -ml-2 rounded-full bg-cyan-400/90 absolute">
+                                    </div>
+                                    <div
+                                        class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
+                                        Github
+                                    </div>
+                                </button>
+                            </a>
+
+                            <a href="https://discord.gg/WFHQsTEZrt">
+                                <button
+                                    class="group relative overflow-hidden rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100">
+                                    <div
+                                        class="dot animate-flow p-4 blur-md group-hover:blur-sm group-hover:p-5 -mt-2 -ml-2 rounded-full bg-cyan-400/90 absolute">
+                                    </div>
+                                    <div
+                                        class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
+                                        Discord
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="relative isolate transform-gpu pt-14">
+                <svg
+                    class="absolute inset-0 -z-10 h-full w-full stroke-cyan-400/10 [mask-image:radial-gradient(75%_50%_at_top_center,white,transparent)]">
+                    <defs>
+                        <pattern id="hero" width="80" height="80" x="50%" y="-1" patternUnits="userSpaceOnUse">
+                            <path d="M.5 200V.5H200" fill="none"></path>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" stroke-width="0" fill="url(#hero)"></rect>
+                </svg>
+                <div class="py-24 sm:py-36 md:py-40 lg:pb-40">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="relative mx-auto max-w-3xl text-center">
+                            <div class="mt-10 flex flex-col items-center justify-center gap-y-8 font-medium">
+                                <h1
+                                    class="bg-gradient-to-br from-white to-zinc-500/20 bg-clip-text text-4xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07]">
+                                    <span><strong><b> V3 LOGGER </b></strong><span class="font-karla"></span></span>
+                                </h1>
+                                
+                                <button
+                                    class="group relative overflow-hidden rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100">
+
+
+                                    <div
+                                        class="relative z-10 rounded-full bg-zinc-950 px-16 py-4 ring-1 ring-white/10 font-large">
+                                        V3
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <br><br>
+                        <section class="terminal" id="main-content">
+                            <div class="fakeMenu">
+                                <div class="fakeButtons fakeClose"></div>
+                                <div class="fakeButtons fakeMinimize"></div>
+                                <div class="fakeButtons fakeZoom"></div>
+                            </div>
+                            <div class="fakeScreen" id="consoleOutput">
+                                <p class="line">$ Waiting for logs...<span class="cursor">_</span></p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="isolate mx-auto max-w-7xl p-6 pb-4 pt-16 lg:px-8">
+            <div class="border-t border-white/10 pt-4 md:flex md:items-center md:justify-between">
+                <div class="flex justify-center text-xs text-zinc-400 space-x-6 md:order-2">
+                    <a class="duration-200 hover:text-zinc-300" href="about.html">
+                        About
+                    </a>
+                    <a class="duration-200 hover:text-zinc-300" href="rpc.html">
+                        RPC
+                    </a>
+                    <a class="duration-200 hover:text-zinc-300" href="https://github.com/RayDev07/SelfBot">
+                        Github
+                    </a>
+                    <a class="duration-200 hover:text-zinc-300" href="https://discord.gg/WFHQsTEZrt">
+                        Discord
+                    </a>
+                </div>
+                <div
+                    class="mt-8 flex items-center gap-4 text-xs font-medium leading-5 text-zinc-400 max-md:flex-col md:order-1 md:mt-0">
+                    <div class="order-2 md:order-1">
+                        <p>© 2024 <a class="duration-200 hover:text-zinc-300" href="https://discord.gg/WFHQsTEZrt">Rock</a> |
+                            Made By Devrock and Ray</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="homepage.js"></script>
+    <script>
+        document.getElementById('about-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('main-content').classList.add('hidden');
+            document.getElementById('about').classList.remove('hidden');
+        });
+
+        document.getElementById('back-button').addEventListener('click', function () {
+            document.getElementById('about').classList.add('hidden');
+            document.getElementById('main-content').classList.remove('hidden');
+        });
+    </script>
+</body>
+
+</html>
