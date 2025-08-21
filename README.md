@@ -56,16 +56,16 @@ Go to **`http://localhost:3003`** in your browser and start customizing your sta
 ## 🎮 Commands  
 !rpc - Open RPC Maker from Discord !status - Show current status !clear - Clear console logs !userinfo - Get user info !serverinfo - Get server info !avatar - Fetch user's avatar !help - Show all commands ... and many more!
 ```
-| Command      | Description                     |
+| Command      | Description                    |
 |-------------|---------------------------------|
-| `!rpc`      | Open RPC Maker from Discord    |
-| `!status`   | Show current status            |
-| `!clear`    | Clear console logs             |
+| `!rpc`      | Open RPC Maker from Discord     |
+| `!status`   | Show current status             |
+| `!clear`    | Clear console logs              |
 | `!userinfo` | Get user info                   |
 | `!serverinfo` | Get server info               |
-| `!avatar`   | Fetch user's avatar            |
-| `!help`     | Show all commands              |
-| ... and many more! |
+| `!avatar`   | Fetch user's avatar             |
+| `!help`     | Show all commands               |
+| ... and many more!                            |
 ```
 ---
 
